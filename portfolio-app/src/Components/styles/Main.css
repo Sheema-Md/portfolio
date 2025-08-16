@@ -1,0 +1,148 @@
+/* Main Page Container and Background */
+.main {
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: #f8efef;
+  position: relative;
+}
+
+.main::before,
+.main::after {
+  content: "";
+  position: absolute;
+}
+
+.main::before {
+  left: 0;
+  clip-path: polygon(100% 33%, 100%, 100% 100%);
+  background: linear-gradient(0deg, rgba(216, 46, 8, 0.885), rgba(62, 7, 189, 0.126));
+  width: 100%;
+  height: 100%;
+}
+
+/* Main Content Wrapper */
+.main_container {
+  display: flex;
+  height: 90vh;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.main_container.active {
+  background: red;
+}
+
+/* Main Text Content Section */
+.main_content {
+  margin-left: 3.445rem;
+}
+
+.text {
+  line-height: 55px;
+}
+
+.text p {
+  color: rgb(157, 155, 155);
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.text h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+/* Icons Section */
+.icons {
+  display: flex;
+}
+
+.icon {
+  margin-top: 1rem;
+  margin-right: 1.4rem;
+  font-size: 35px;
+  cursor: pointer;
+  color: rgb(157, 155, 155);
+}
+
+.icon:hover {
+  color: red;
+}
+
+/* Buttons Section */
+.buttons button {
+  padding: 15px 40px;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  background: linear-gradient(25deg, rgba(1, 60, 210, 0.753), rgba(255, 72, 6));
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+/* Main Image Section */
+.main_img {
+  clip-path: circle(45% at 40% 45%);
+  cursor: pointer;
+}
+
+.main_img img {
+  /* Note: The background property for <img> is not standard. */
+  background: linear-gradient(45deg, rgb(216, 46, 8), rgb(0, 0, 0));
+}
+
+/* Media Query for Tablets/Small Desktops */
+@media (max-width: 1200px) {
+  .text {
+    white-space: nowrap;
+    line-height: 30px;
+  }
+  .text p {
+    font-size: 14px;
+  }
+  .text h1 {
+    font-size: 30px;
+  }
+  .buttons button {
+    padding: 8px 20px;
+  }
+  .icons {
+    margin-right: 1rem;
+  }
+  /* The .icon rule was missing, but based on your previous input, this is a likely style. */
+  .icon {
+    font-size: 25px;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+  .main_content {
+    margin-left: 0;
+  }
+  .main_container {
+    text-align: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .main_img img {
+    width: 250px;
+  }
+  .text h1 {
+    font-size: 23px;
+  }
+  .text p {
+    color: #000;
+    font-size: 11px;
+  }
+  .icons {
+    margin-left: 2rem;
+  }
+  .icon {
+    color: firebrick;
+  }
+}
