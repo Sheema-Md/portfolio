@@ -15,7 +15,7 @@ function App() {
       <Section/>
       <Contact/>
     </div>
-  );
+  );//comment
 }
 
 export default App;
