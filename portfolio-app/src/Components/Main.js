@@ -1,6 +1,10 @@
 import React from "react";
 import './styles/Main.css';
-import {Instagram , Facebook , Twitter ,LinkedIn} from "@mui/icons-material";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 import sheema from './assests/profile.jpg';
 const Main = ()=>{
     return(
@@ -12,10 +16,11 @@ const Main = ()=>{
                     <h1>I am Sheema Mohammed </h1>
                     <p>Aspiring Web Developer</p>
                     <div className="icons">
-                        <Instagram className="icon"/>
-                        <Facebook className="icon"/>
-                        <Twitter className="icon"/>
-                        <LinkedIn className="icon"/>
+                        <InstagramIcon className="icon" />
+<FacebookIcon className="icon" />
+<TwitterIcon className="icon" />
+<LinkedInIcon className="icon" />
+
                     </div>
                     <div className="buttons">
                         <button>See Me</button>
@@ -31,4 +36,4 @@ const Main = ()=>{
         </div>
     )
 }
-export default Main;
+export default Main

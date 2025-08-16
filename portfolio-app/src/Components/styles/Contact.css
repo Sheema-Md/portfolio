@@ -1,0 +1,98 @@
+.contact {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: gray;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+a{
+    color:grey;
+    text-decoration: none;
+}
+
+input {
+  width: 100%;
+  height: 40px; /* Adjusted to a reasonable height */
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input.message {
+  height: 100px; /* For the message textarea effect */
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: rgb(82, 76, 70);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+h1{
+    color:rgb(82,76,76)
+}
+input{
+
+width: 100%;
+
+align-items: center;
+
+padding: 20px;
+
+outline: none;
+
+border: none;
+
+}
+
+.message {
+
+padding-bottom: 10rem;
+
+}
+
+button{
+
+padding: 10px 40px;
+
+background: none;
+
+cursor: pointer;
+
+margin-top: 1rem;
+
+border: 1px solid blue;
+
+color: rgb(255, 102, 128);
+
+text-transform: uppercase;}
+@media(max-width:550px){
+    .inputs{
+        width: 80%;
+    }
+    input{
+        padding: 15px;
+    }
+}
